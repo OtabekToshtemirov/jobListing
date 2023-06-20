@@ -1,0 +1,82 @@
+.nav {
+    background: url("../images/bg-header-desktop.svg") center no-repeat, #5DA5A4;
+    height: 16vh;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #F0FAFB;
+}
+
+.searchbar{
+    background-color: #F0FAFB;
+    width: 100%;
+    position: relative;
+    height: 60px;
+    margin-bottom: 3rem ;
+}
+
+.search{
+    position: absolute;
+    width: 100%;
+    min-height: 60px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+
+}
+
+.clear{
+    position: absolute;
+    right: 20px;
+    color: var(--dark-grayish-cyan);
+    font-weight: var(--bold--font-weight);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.clear:hover{
+    text-decoration: underline;
+}
+.filtered-skills{
+    border: none;
+    display: flex;
+    height: auto;
+    width: 120px;
+    padding-left: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-grayish-cyan-background);
+    border-radius: 7px;
+    font-family:"Spartan", sans-serif;
+    font-weight: var(--bold--font-weight);
+    font-size: 1rem;
+    color: #5DA5A4;
+    margin: 0.5rem;
+}
+.remove-button{
+    background-color: #5DA5A4;
+    right: 0;
+    color: white;
+    border: none;
+    border-radius:0 6px 6px 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+}
