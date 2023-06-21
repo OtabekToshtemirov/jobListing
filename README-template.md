@@ -34,8 +34,8 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/OtabekToshtemirov/jobListing)
+- Live Site URL: [Add live site URL here](https://precious-twilight-054062.netlify.app/)
 
 ## My process
 
