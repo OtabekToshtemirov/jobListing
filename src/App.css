@@ -1,10 +1,10 @@
 .nav {
     background: url("../images/bg-header-desktop.svg") center no-repeat, #5DA5A4;
-    height: 16vh;
+    height: 20vh;
     width: 100%;
 }
 .container{
-    width: 1200px;
+    width: 90%;
     margin: 0 auto;
 }
 body{
@@ -48,6 +48,9 @@ body{
 }
 .clear:hover{
     text-decoration: underline;
+}
+.hidden{
+    display: none;
 }
 .filtered-skills{
     border: none;
