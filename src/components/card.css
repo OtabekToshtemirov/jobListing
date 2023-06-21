@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 20px rgba(60, 116, 119, 0.25);
     border-radius: 6px;
     padding: 1rem;
     margin: 1rem auto;
@@ -24,7 +24,7 @@
 
 .info {
     font-size: 1rem;
-    font-weight: var(--light--font-weight);
+    font-weight: 600;
     color: var(--dark-grayish-cyan);
     flex: 1;
 }
@@ -35,13 +35,13 @@
 
 .new {
     color: white;
-    padding: 5px 8px;
+    padding: 4px 10px;
     margin: 0 0.5rem;
     background-color: var(--desaturated-dark-cyan);
     border-radius: 20px;
     font-weight: var(--bold--font-weight);
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
 }
 
@@ -49,15 +49,17 @@
     color: white;
     margin: 0 0.5rem;
     background-color: var(--very-dark-grayish-cyan);
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 20px;
     font-weight: var(--bold--font-weight);
     text-transform: uppercase;
-    padding: 5px 8px;
+    padding: 4px 10px;
 
 }
 
 .dot {
+    font-weight: var(--bold--font-weight);
+    margin: 0 0.5rem;
     color: var(--dark-grayish-cyan);
     font-size: 1rem;
     display: inline-block;
@@ -82,16 +84,18 @@
     display: inline-block;
     margin: 0.5rem 0;
 }
-
-/*every child of .languages*/
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+}
 .languages > * {
-    margin: 0 0.5rem;
+    margin-right:  0.8rem;
     color: var(--desaturated-dark-cyan);
     font-size: 1rem;
     font-family: "Spartan", sans-serif;
     font-weight: var(--bold--font-weight);
     padding: 5px 8px;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: var(--light-grayish-cyan-filter-tablets);
 
 }
@@ -102,4 +106,53 @@
     color: white;
     transition: all 0.3s ease-in-out;
     cursor:pointer;
+}
+
+/*media query for screens with max-width 768px*/
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 4%;
+        margin: 2.5rem;
+    }
+    .flex img {
+        width: 70px;
+        position: absolute;
+        margin-top: -50px;
+    }
+    .info{
+        margin: 1rem 0;
+    }
+    .languages > *{
+        margin-right:  0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/*media query for screens with max-width 375px*/
+@media screen and (max-width: 375px) {
+    .container{
+        width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 4%;
+        margin: 2.5rem;
+    }
+    .flex img {
+        width: 70px;
+        position: absolute;
+        margin-top: -22%;
+    }
+    .info{
+        margin: 1rem 0;
+    }
+    .languages > *{
+        margin-right:  0.8rem;
+        margin-bottom: 0.8rem;
+    }
 }
